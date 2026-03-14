@@ -16,7 +16,7 @@ namespace DA
         public ProductoDA(IRepositorioDapper repositorioDapper)
         {
             _repositorioDapper = repositorioDapper;
-            _sqlconnection = _repositorioDapper.ObtenerConexion();
+            _sqlconnection = _repositorioDapper.ObtenerRepositorio();
         }
 
         #region Operaciones

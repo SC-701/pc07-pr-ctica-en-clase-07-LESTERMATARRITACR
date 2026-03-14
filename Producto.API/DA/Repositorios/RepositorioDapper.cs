@@ -15,7 +15,7 @@ namespace DA.Repositorios
             _conexionBaseDatos = new SqlConnection(_configuracion.GetConnectionString("BD"));
         }
 
-        public SqlConnection ObtenerConexion()
+        public SqlConnection ObtenerRepositorio()
         {
             return _conexionBaseDatos;
         }
