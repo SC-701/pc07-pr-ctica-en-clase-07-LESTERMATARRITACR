@@ -8,8 +8,8 @@
 }
     public class Metodo
     {
-        public string Nombre { get; set; }
-        public string Valor { get; set; }
+        public string? Nombre { get; set; }
+        public string? Valor { get; set; }
 
     }
 }
