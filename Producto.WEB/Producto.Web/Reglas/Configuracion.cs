@@ -35,12 +35,9 @@ namespace Reglas
             return $"{UrlBase}{Metodo}";
         }
 
-        public string ObtenerValor(string llave0)
+        public string ObtenerValor(string llave)
         {
-            return _configuracion
-                .GetSection(llave0)
-                .Get<ApiEndPoint>()
-                .UrlBase;
+            return _configuracion.GetSection(llave).Get<ApiEndPoint>().UrlBase;
         }
     }
 }
